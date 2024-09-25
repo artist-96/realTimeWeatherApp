@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    
+}
+
+body{
+    margin: 0;
+    background-color: hsla(0, 0%, 0%, 0.877);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    perspective: 100rem;
+}
+
+.weatherSearch{
+    margin: 20px;
+    perspective: 50rem;
+}
+
+.cityInput{
+    padding: 10px 20px;
+    font-size: 2rem;
+    border: 2px solid hsla(0, 0%, 20%, 0.5);
+    border-radius: 10px;
+    margin: 20px;
+    width: 500px;
+}
+
+.searchbutton{
+    padding: 10px 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: hsla(0, 0%, 81%, 0.781);
+    color: hsl(0, 0%, 0%);
+    border: 2px solid hsla(0, 0%, 20%, 0.603);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.searchbutton:hover{
+    background-color: hsl(0, 0%, 52%);;
+    transform: translateY(-0.1rem) translateX(1rem) translateZ(-5rem);
+}
+
+.card{
+    
+    background: linear-gradient(180deg, hsl(0, 100%, 75%), hsl(40, 100%, 75%));
+    padding: 50px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.5);
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 50px;
+    transition: transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.card:hover{
+    transform: translateZ(10rem);
+}
+
+h1{
+    font-size: 3.5rem;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+p{
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+.cityDisplay, .tempDisplay{
+
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: hsla(0, 0%, 7%, 0.884);
+    margin-bottom: 25px;
+}
+
+.humdityDisplay{
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.weatherinfo{
+    font-style: italic;
+    /* font-weight: bold; */
+    font-size: 2rem;
+}
+
+.weatherImg{
+    margin: 0;
+    font-size: 7.5rem;
+}
+
+.errorDisplay{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: hsla(0, 0%, 0%, 0.815);
+
+}
